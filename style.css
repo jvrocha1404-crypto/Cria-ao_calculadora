@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Qwigley", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background: linear-gradient(135deg, blue, white);/*Fundo da minha página*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculadora{
+    background-color: rgba(240, 248, 255, 0.596);
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    width: 320px;
+    display: flex;/*ativa o flexbox na calculadora*/
+    flex-direction: column;/*muda direção para coluna*/
+    gap: 20px;/*coloca espaçamento entre os itens*/
+}
+/*mudanças na caixa box e oque tem dentro dela*/
+#tela{
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color:white;
+    color:black;
+    text-align: right;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+/*colocamos display felx onde deixou mais flexivel*/
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.linha-botoes{
+    display: flex;
+    gap: 15px;
+}
+
+button{
+    flex: 1;/*se adapta ao tamanho da caixa*/
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover{
+    background-color: aliceblue;
+    transform: translateY(-2px);
+}
+button:active{
+    transform: scale(0.97);/*tem uma reaçao quando é clicado*/
+    
+}
+/*botões de operação (+;-;*;/)*/
+.operador{
+    background-color: rgb(43, 46, 226);
+    color: white;
+}
+/*cor de fundo do texto para outra cor*/
+.operador:hover{
+    background-color: rgb(23, 8, 110);
+}
+/*cor de fundo do texto*/
+.botao-igual{
+    background-color:green;
+}
+.botao-igual:hover{
+    background-color:rgb(3, 77, 3);
+}
+/*botão de limpar (C)*/
+.botao-limpar{
+    background-color: brown;
+}
+.botao-limpar:hover{
+    background-color: rgb(143, 12, 12);
+}
+.botao-zero{
+    flex: 2;
+}
